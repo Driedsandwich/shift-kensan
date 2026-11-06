@@ -1,0 +1,1319 @@
+{
+  "mode": "mock",
+  "runAt": "2026-11-06T02:18:21.035Z",
+  "calculation": {
+    "passed": 41,
+    "total": 41,
+    "accuracy": 1
+  },
+  "extraction": {
+    "matched": 53,
+    "total": 53,
+    "fieldAccuracy": 1,
+    "casesPassed": 10,
+    "casesTotal": 10
+  },
+  "calculations": [
+    {
+      "id": "C01",
+      "name": "通常4時間",
+      "passed": true,
+      "expected": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0
+      },
+      "actual": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "1500×4=6000"
+    },
+    {
+      "id": "C02",
+      "name": "深夜1時間",
+      "passed": true,
+      "expected": {
+        "minutes": 300,
+        "amount": 7875,
+        "gap": 375,
+        "night": 60
+      },
+      "actual": {
+        "minutes": 300,
+        "amount": 7875,
+        "gap": 375,
+        "ot": 0,
+        "night": 60,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "1500×5+1500×0.25=7875"
+    },
+    {
+      "id": "C03",
+      "name": "深夜2時間",
+      "passed": true,
+      "expected": {
+        "minutes": 180,
+        "amount": 5250,
+        "gap": 750,
+        "night": 120
+      },
+      "actual": {
+        "minutes": 180,
+        "amount": 5250,
+        "gap": 750,
+        "ot": 0,
+        "night": 120,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "4500+750=5250"
+    },
+    {
+      "id": "C04",
+      "name": "深夜0〜5時",
+      "passed": true,
+      "expected": {
+        "minutes": 300,
+        "amount": 9375,
+        "gap": 1875,
+        "night": 300
+      },
+      "actual": {
+        "minutes": 300,
+        "amount": 9375,
+        "gap": 1875,
+        "ot": 0,
+        "night": 300,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "7500×1.25=9375"
+    },
+    {
+      "id": "C05",
+      "name": "5時をまたぐ",
+      "passed": true,
+      "expected": {
+        "minutes": 120,
+        "amount": 3375,
+        "gap": 375,
+        "night": 60
+      },
+      "actual": {
+        "minutes": 120,
+        "amount": 3375,
+        "gap": 375,
+        "ot": 0,
+        "night": 60,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "3000+375=3375"
+    },
+    {
+      "id": "C06",
+      "name": "22時の1分境界",
+      "passed": true,
+      "expected": {
+        "minutes": 2,
+        "amount": 57,
+        "gap": 7,
+        "night": 1
+      },
+      "actual": {
+        "minutes": 2,
+        "amount": 57,
+        "gap": 7,
+        "ot": 0,
+        "night": 1,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "50+6.25=56.25→57"
+    },
+    {
+      "id": "C07",
+      "name": "5時の1分境界",
+      "passed": true,
+      "expected": {
+        "minutes": 2,
+        "amount": 57,
+        "gap": 7,
+        "night": 1
+      },
+      "actual": {
+        "minutes": 2,
+        "amount": 57,
+        "gap": 7,
+        "ot": 0,
+        "night": 1,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "50+6.25=56.25→57"
+    },
+    {
+      "id": "C08",
+      "name": "日8時間超",
+      "passed": true,
+      "expected": {
+        "minutes": 540,
+        "amount": 13875,
+        "gap": 375,
+        "ot": 60,
+        "requiredRest": 60
+      },
+      "actual": {
+        "minutes": 540,
+        "amount": 13875,
+        "gap": 375,
+        "ot": 60,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 60
+      },
+      "manual": "13500+375=13875"
+    },
+    {
+      "id": "C09",
+      "name": "休憩1時間を除外",
+      "passed": true,
+      "expected": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 0,
+        "ot": 0,
+        "rest": 60,
+        "requiredRest": 45
+      },
+      "actual": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 60,
+        "requiredRest": 45
+      },
+      "manual": "拘束9h−休憩1h=8h"
+    },
+    {
+      "id": "C10",
+      "name": "8時間1分・休憩あり",
+      "passed": true,
+      "expected": {
+        "minutes": 481,
+        "amount": 12032,
+        "gap": 32,
+        "ot": 1,
+        "rest": 60,
+        "requiredRest": 60
+      },
+      "actual": {
+        "minutes": 481,
+        "amount": 12032,
+        "gap": 32,
+        "ot": 1,
+        "night": 0,
+        "holiday": 0,
+        "rest": 60,
+        "requiredRest": 60
+      },
+      "manual": "12000+25×1.25=12031.25→12032"
+    },
+    {
+      "id": "C11",
+      "name": "6時間ちょうど",
+      "passed": true,
+      "expected": {
+        "minutes": 360,
+        "amount": 9000,
+        "gap": 0,
+        "requiredRest": 0
+      },
+      "actual": {
+        "minutes": 360,
+        "amount": 9000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "1500×6"
+    },
+    {
+      "id": "C12",
+      "name": "6時間1分",
+      "passed": true,
+      "expected": {
+        "minutes": 361,
+        "amount": 9025,
+        "gap": 0,
+        "requiredRest": 45
+      },
+      "actual": {
+        "minutes": 361,
+        "amount": 9025,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 45
+      },
+      "manual": "1500×6+25"
+    },
+    {
+      "id": "C13",
+      "name": "8時間ちょうど",
+      "passed": true,
+      "expected": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 0,
+        "ot": 0,
+        "requiredRest": 45
+      },
+      "actual": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 45
+      },
+      "manual": "1500×8"
+    },
+    {
+      "id": "C14",
+      "name": "8時間1分",
+      "passed": true,
+      "expected": {
+        "minutes": 481,
+        "amount": 12032,
+        "gap": 32,
+        "ot": 1,
+        "requiredRest": 60
+      },
+      "actual": {
+        "minutes": 481,
+        "amount": 12032,
+        "gap": 32,
+        "ot": 1,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 60
+      },
+      "manual": "12000+31.25→12032"
+    },
+    {
+      "id": "C15",
+      "name": "時間外と深夜が重なる",
+      "passed": true,
+      "expected": {
+        "minutes": 600,
+        "amount": 16125,
+        "gap": 1125,
+        "ot": 120,
+        "night": 60
+      },
+      "actual": {
+        "minutes": 600,
+        "amount": 16125,
+        "gap": 1125,
+        "ot": 120,
+        "night": 60,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 60
+      },
+      "manual": "15000+750+375"
+    },
+    {
+      "id": "C16",
+      "name": "法定休日は時間外と重ねない",
+      "passed": true,
+      "expected": {
+        "minutes": 600,
+        "amount": 20250,
+        "gap": 5250,
+        "ot": 0,
+        "holiday": 600
+      },
+      "actual": {
+        "minutes": 600,
+        "amount": 20250,
+        "gap": 5250,
+        "ot": 0,
+        "night": 0,
+        "holiday": 600,
+        "rest": 0,
+        "requiredRest": 60
+      },
+      "manual": "15000×1.35"
+    },
+    {
+      "id": "C17",
+      "name": "休日と深夜が重なる",
+      "passed": true,
+      "expected": {
+        "minutes": 360,
+        "amount": 13650,
+        "gap": 4650,
+        "ot": 0,
+        "night": 240,
+        "holiday": 360
+      },
+      "actual": {
+        "minutes": 360,
+        "amount": 13650,
+        "gap": 4650,
+        "ot": 0,
+        "night": 240,
+        "holiday": 360,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "9000×1.35+6000×0.25"
+    },
+    {
+      "id": "C18",
+      "name": "0時から休日",
+      "passed": true,
+      "expected": {
+        "minutes": 120,
+        "amount": 4275,
+        "gap": 1275,
+        "night": 120,
+        "holiday": 60
+      },
+      "actual": {
+        "minutes": 120,
+        "amount": 4275,
+        "gap": 1275,
+        "ot": 0,
+        "night": 120,
+        "holiday": 60,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "3000+750+525"
+    },
+    {
+      "id": "C19",
+      "name": "0時で休日終了",
+      "passed": true,
+      "expected": {
+        "minutes": 120,
+        "amount": 4275,
+        "gap": 1275,
+        "night": 120,
+        "holiday": 60
+      },
+      "actual": {
+        "minutes": 120,
+        "amount": 4275,
+        "gap": 1275,
+        "ot": 0,
+        "night": 120,
+        "holiday": 60,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "3000+750+525"
+    },
+    {
+      "id": "C20",
+      "name": "日またぎの8時間判定",
+      "passed": true,
+      "expected": {
+        "minutes": 600,
+        "amount": 18375,
+        "gap": 3375,
+        "ot": 120,
+        "night": 420
+      },
+      "actual": {
+        "minutes": 600,
+        "amount": 18375,
+        "gap": 3375,
+        "ot": 120,
+        "night": 420,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 60
+      },
+      "manual": "15000+750+2625"
+    },
+    {
+      "id": "C21",
+      "name": "深夜の休憩を除外",
+      "passed": true,
+      "expected": {
+        "minutes": 300,
+        "amount": 8625,
+        "gap": 1125,
+        "night": 180,
+        "rest": 60
+      },
+      "actual": {
+        "minutes": 300,
+        "amount": 8625,
+        "gap": 1125,
+        "ot": 0,
+        "night": 180,
+        "holiday": 0,
+        "rest": 60,
+        "requiredRest": 0
+      },
+      "manual": "7500+4500×0.25"
+    },
+    {
+      "id": "C22",
+      "name": "週40時間超",
+      "passed": true,
+      "expected": {
+        "minutes": 2880,
+        "amount": 75000,
+        "gap": 3000,
+        "ot": 480
+      },
+      "actual": {
+        "minutes": 2880,
+        "amount": 75000,
+        "gap": 3000,
+        "ot": 480,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 270
+      },
+      "manual": "1500×48+1500×8×0.25"
+    },
+    {
+      "id": "C23",
+      "name": "日と週の超過を二重にしない",
+      "passed": true,
+      "expected": {
+        "minutes": 2700,
+        "amount": 69375,
+        "gap": 1875,
+        "ot": 300
+      },
+      "actual": {
+        "minutes": 2700,
+        "amount": 69375,
+        "gap": 1875,
+        "ot": 300,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 300
+      },
+      "manual": "45hのうち日超過5h、週超過の追加なし"
+    },
+    {
+      "id": "C24",
+      "name": "週の境目・日曜起算",
+      "passed": true,
+      "expected": {
+        "minutes": 2880,
+        "amount": 72000,
+        "gap": 0,
+        "ot": 0
+      },
+      "actual": {
+        "minutes": 2880,
+        "amount": 72000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 270
+      },
+      "manual": "40hと翌週8hに分かれる"
+    },
+    {
+      "id": "C25",
+      "name": "週の境目・月曜起算",
+      "passed": true,
+      "expected": {
+        "minutes": 2880,
+        "amount": 75000,
+        "gap": 3000,
+        "ot": 480
+      },
+      "actual": {
+        "minutes": 2880,
+        "amount": 75000,
+        "gap": 3000,
+        "ot": 480,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 270
+      },
+      "manual": "月曜〜日曜は48h"
+    },
+    {
+      "id": "C26",
+      "name": "最低賃金の改定前",
+      "passed": true,
+      "expected": {
+        "minutes": 60,
+        "amount": 1226,
+        "gap": 26
+      },
+      "actual": {
+        "minutes": 60,
+        "amount": 1226,
+        "gap": 26,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "東京旧額1226×1"
+    },
+    {
+      "id": "C27",
+      "name": "最低賃金の発効日",
+      "passed": true,
+      "expected": {
+        "minutes": 60,
+        "amount": 1280,
+        "gap": 80
+      },
+      "actual": {
+        "minutes": 60,
+        "amount": 1280,
+        "gap": 80,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "東京新額1280×1"
+    },
+    {
+      "id": "C28",
+      "name": "発効日前夜から継続",
+      "passed": true,
+      "expected": {
+        "minutes": 120,
+        "amount": 3133,
+        "gap": 733,
+        "night": 120
+      },
+      "actual": {
+        "minutes": 120,
+        "amount": 3133,
+        "gap": 733,
+        "ot": 0,
+        "night": 120,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "(1226+1280)×1.25=3132.5→3133"
+    },
+    {
+      "id": "C29",
+      "name": "コマ給の授業外作業",
+      "passed": true,
+      "expected": {
+        "minutes": 355,
+        "amount": 7787,
+        "gap": 2387,
+        "night": 40
+      },
+      "actual": {
+        "minutes": 355,
+        "amount": 7787,
+        "gap": 2387,
+        "ot": 0,
+        "night": 40,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "1280×355/60+1280×40/60×0.25=7786.666…"
+    },
+    {
+      "id": "C30",
+      "name": "指示不明を除く",
+      "passed": true,
+      "expected": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": 0
+      },
+      "actual": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "不明の準備を除く"
+    },
+    {
+      "id": "C31",
+      "name": "指示不明を含む",
+      "passed": true,
+      "expected": {
+        "minutes": 255,
+        "amount": 6375,
+        "gap": 375
+      },
+      "actual": {
+        "minutes": 255,
+        "amount": 6375,
+        "gap": 375,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "4.25h×1500"
+    },
+    {
+      "id": "C32",
+      "name": "重なる勤務を1回だけ数える",
+      "passed": true,
+      "expected": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": 0
+      },
+      "actual": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "同じ15分は二重加算しない"
+    },
+    {
+      "id": "C33",
+      "name": "支払額が不明",
+      "passed": true,
+      "expected": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": null
+      },
+      "actual": {
+        "minutes": 240,
+        "amount": 6000,
+        "gap": null,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "支払額を0と推定しない"
+    },
+    {
+      "id": "C34",
+      "name": "月額のみ記載",
+      "passed": true,
+      "expected": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 1000
+      },
+      "actual": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 1000,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "6000×2−11000"
+    },
+    {
+      "id": "C35",
+      "name": "月合計の四捨五入",
+      "passed": true,
+      "expected": {
+        "minutes": 2,
+        "amount": 56,
+        "gap": 6
+      },
+      "actual": {
+        "minutes": 2,
+        "amount": 56,
+        "gap": 6,
+        "ot": 0,
+        "night": 1,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "56.25→56"
+    },
+    {
+      "id": "C36",
+      "name": "丸めない",
+      "passed": true,
+      "expected": {
+        "minutes": 2,
+        "amount": 56.25,
+        "gap": 6.25
+      },
+      "actual": {
+        "minutes": 2,
+        "amount": 56.25,
+        "gap": 6.25,
+        "ot": 0,
+        "night": 1,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "56.25のまま"
+    },
+    {
+      "id": "C37",
+      "name": "翌月の過払いと相殺しない",
+      "passed": true,
+      "expected": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 500
+      },
+      "actual": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 500,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "10月過払500は11月不足500と相殺しない"
+    },
+    {
+      "id": "C38",
+      "name": "月60時間超を50%へ",
+      "passed": true,
+      "expected": {
+        "minutes": 14400,
+        "amount": 397500,
+        "gap": 37500,
+        "ot": 4800,
+        "night": 0
+      },
+      "actual": {
+        "minutes": 14400,
+        "amount": 397500,
+        "gap": 37500,
+        "ot": 4800,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 1200
+      },
+      "manual": "240h×1500+60h×375+20h×750=397500"
+    },
+    {
+      "id": "C39",
+      "name": "法定休日を週40時間に算入しない",
+      "passed": true,
+      "expected": {
+        "minutes": 2880,
+        "amount": 76200,
+        "gap": 4200,
+        "ot": 0,
+        "holiday": 480
+      },
+      "actual": {
+        "minutes": 2880,
+        "amount": 76200,
+        "gap": 4200,
+        "ot": 0,
+        "night": 0,
+        "holiday": 480,
+        "rest": 0,
+        "requiredRest": 270
+      },
+      "manual": "72000+8h×1500×0.35"
+    },
+    {
+      "id": "C40",
+      "name": "月の中でのみ過不足を相殺",
+      "passed": true,
+      "expected": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 0
+      },
+      "actual": {
+        "minutes": 480,
+        "amount": 12000,
+        "gap": 0,
+        "ot": 0,
+        "night": 0,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 0
+      },
+      "manual": "同月6000+6000と支払6500+5500"
+    },
+    {
+      "id": "C41",
+      "name": "月60時間超と深夜の重なり",
+      "passed": true,
+      "expected": {
+        "minutes": 11520,
+        "amount": 315000,
+        "gap": 27000,
+        "ot": 3840,
+        "night": 240
+      },
+      "actual": {
+        "minutes": 11520,
+        "amount": 315000,
+        "gap": 27000,
+        "ot": 3840,
+        "night": 240,
+        "holiday": 0,
+        "rest": 0,
+        "requiredRest": 960
+      },
+      "manual": "15日×19500+(18000+4h×750+4h×375)=315000"
+    }
+  ],
+  "extractions": [
+    {
+      "id": "E01",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1400,
+          "actual": 1400,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.date",
+          "expected": "2026-11-02",
+          "actual": "2026-11-02",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.start",
+          "expected": "17:00",
+          "actual": "17:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.end",
+          "expected": "21:00",
+          "actual": "21:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.paid",
+          "expected": 5600,
+          "actual": 5600,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1500,
+          "actual": 1500,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.date",
+          "expected": "2026-11-03",
+          "actual": "2026-11-03",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.start",
+          "expected": "18:00",
+          "actual": "18:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.end",
+          "expected": "23:00",
+          "actual": "23:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.paid",
+          "expected": 7500,
+          "actual": 7500,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1500,
+          "actual": 1500,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.date",
+          "expected": "2026-11-04",
+          "actual": "2026-11-04",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.start",
+          "expected": "09:00",
+          "actual": "09:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.kind",
+          "expected": "休憩",
+          "actual": "休憩",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.start",
+          "expected": "12:00",
+          "actual": "12:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.end",
+          "expected": "13:00",
+          "actual": "13:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.paid",
+          "expected": 12000,
+          "actual": 12000,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1600,
+          "actual": 1600,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.date",
+          "expected": "2026-11-05",
+          "actual": "2026-11-05",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.end",
+          "expected": "26:00",
+          "actual": "26:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.paid",
+          "expected": 9600,
+          "actual": 9600,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "payType",
+          "expected": "class",
+          "actual": "class",
+          "passed": true
+        },
+        {
+          "path": "rate",
+          "expected": 1800,
+          "actual": 1800,
+          "passed": true
+        },
+        {
+          "path": "classMinutes",
+          "expected": 90,
+          "actual": 90,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.classes",
+          "expected": 2,
+          "actual": 2,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.kind",
+          "expected": "授業",
+          "actual": "授業",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.paid",
+          "expected": 3600,
+          "actual": 3600,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1800,
+          "actual": 1800,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.kind",
+          "expected": "準備",
+          "actual": "準備",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.start",
+          "expected": "16:45",
+          "actual": "16:45",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.end",
+          "expected": "17:00",
+          "actual": "17:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.instructed",
+          "expected": "yes",
+          "actual": "yes",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1400,
+          "actual": 1400,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.kind",
+          "expected": "報告書",
+          "actual": "報告書",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.start",
+          "expected": "21:00",
+          "actual": "21:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.end",
+          "expected": "21:10",
+          "actual": "21:10",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.1.instructed",
+          "expected": "yes",
+          "actual": "yes",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1400,
+          "actual": 1400,
+          "passed": true
+        },
+        {
+          "path": "shifts.length",
+          "expected": 2,
+          "actual": 2,
+          "passed": true
+        },
+        {
+          "path": "shifts.1.date",
+          "expected": "2026-11-04",
+          "actual": "2026-11-04",
+          "passed": true
+        },
+        {
+          "path": "shifts.1.blocks.0.start",
+          "expected": "18:00",
+          "actual": "18:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.1.paid",
+          "expected": 5600,
+          "actual": 5600,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1400,
+          "actual": 1400,
+          "passed": true
+        },
+        {
+          "path": "shifts.length",
+          "expected": 3,
+          "actual": 3,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.date",
+          "expected": "2026-10-26",
+          "actual": "2026-10-26",
+          "passed": true
+        },
+        {
+          "path": "shifts.1.date",
+          "expected": "2026-10-28",
+          "actual": "2026-10-28",
+          "passed": true
+        },
+        {
+          "path": "shifts.2.date",
+          "expected": "2026-10-30",
+          "actual": "2026-10-30",
+          "passed": true
+        },
+        {
+          "path": "shifts.2.paid",
+          "expected": 5600,
+          "actual": 5600,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "passed": true,
+      "aiCalls": 0,
+      "fields": [
+        {
+          "path": "rate",
+          "expected": 1400,
+          "actual": 1400,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.date",
+          "expected": "2026-11-02",
+          "actual": "2026-11-02",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.paid",
+          "expected": null,
+          "actual": null,
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.start",
+          "expected": "17:00",
+          "actual": "17:00",
+          "passed": true
+        },
+        {
+          "path": "shifts.0.blocks.0.end",
+          "expected": "21:00",
+          "actual": "21:00",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "limitations": "合成の既知ケースの回帰評価。実際の写真・手書き・全契約形態の精度を示しません。mockの抽出精度はAI性能ではありません。"
+}

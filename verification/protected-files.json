@@ -1,0 +1,127 @@
+{
+  "checked": 24,
+  "unchanged": 24,
+  "npmrcRestored": true,
+  "files": [
+    {
+      "path": "api/analyze.js",
+      "unchanged": true,
+      "sha256": "a5ab453a7f5449a77aa3aa2d1706ecef1ceec5df47d03dda0317177c18e63079"
+    },
+    {
+      "path": "eval/README.md",
+      "unchanged": true,
+      "sha256": "1d11d0c1637d73028bb2503c776b4a6fe6fff8a62fd64e105631cc6232663270"
+    },
+    {
+      "path": "eval/cases.ts",
+      "unchanged": true,
+      "sha256": "1db01c9461b89323cca10650ce44abf35337a4be608af9ae562a2be4442deed8"
+    },
+    {
+      "path": "eval/extraction-cases.ts",
+      "unchanged": true,
+      "sha256": "3377e7c72424b3d88737c6831b835263bd0dcf2a0452074005a1dbb067e29b8d"
+    },
+    {
+      "path": "eval/run.ts",
+      "unchanged": true,
+      "sha256": "2b96b290a7a79358d352e3b59619d3ca2e5f2e903fcc9d79212f4344284558bd"
+    },
+    {
+      "path": "package-lock.json",
+      "unchanged": true,
+      "sha256": "01a1e0bb8b494e8fafff9727cb1982429f7d443140a6eb83b5feedb0290bb508"
+    },
+    {
+      "path": "package.json",
+      "unchanged": true,
+      "sha256": "cafde3a0242c845250c8ffa7a9282d2799244197e95f31632b997c62fc28e4a1"
+    },
+    {
+      "path": "server/http.ts",
+      "unchanged": true,
+      "sha256": "8d4d451c640cb57425a3821bb3783fe65356ebeac004d1e95842b750c4d8f62c"
+    },
+    {
+      "path": "server/pipeline.ts",
+      "unchanged": true,
+      "sha256": "a964332b890d906f5c98a5a17b82c5736900c65e5f15f6baf26b1111ffbb3960"
+    },
+    {
+      "path": "server/providers.ts",
+      "unchanged": true,
+      "sha256": "cebe506835577598d4587146b2995902977509b1360c3d0fbe15e3c3d2e46e10"
+    },
+    {
+      "path": "server/vercel-entry.ts",
+      "unchanged": true,
+      "sha256": "457ba9d775a65580b5190ecc9359abf8d689858964c02deb9948f4afb375d72e"
+    },
+    {
+      "path": "src/core/calculate.ts",
+      "unchanged": true,
+      "sha256": "227de9c979157b134bb3fec5b18d7d9138f5f19edbcbfc1864bdb37ad5bec22c"
+    },
+    {
+      "path": "src/core/message.ts",
+      "unchanged": true,
+      "sha256": "9e664f8572170fa34a662f28ea4da175ce1ca595392824d90841eac66a6680da"
+    },
+    {
+      "path": "src/core/mock.ts",
+      "unchanged": true,
+      "sha256": "88479011e6b5b1c3015ffbfe5ba3cdd14d5de9bd5d56a4717b8205d8ec952ecc"
+    },
+    {
+      "path": "src/core/normalize.ts",
+      "unchanged": true,
+      "sha256": "d0e7ae9e9a9b24ae9fab274e72f6c79da62c2c555a3209898e9a73e1e03b9364"
+    },
+    {
+      "path": "src/core/schema.ts",
+      "unchanged": true,
+      "sha256": "b2e48b41347260f9a7dada8ead9982b887eb6af3cbbfd1132d805dfe527e9dcc"
+    },
+    {
+      "path": "src/core/time.ts",
+      "unchanged": true,
+      "sha256": "c279c453f6fa00b3d750ea006a59f7fadc1f6a376b4e8576cb180fdc694ed38f"
+    },
+    {
+      "path": "src/data/minimum-wages.ts",
+      "unchanged": true,
+      "sha256": "d5e69f5c03bbc0fd4285fbaa47dcd736a689fd304abf3ba4937d038c89dc2421"
+    },
+    {
+      "path": "src/data/samples.ts",
+      "unchanged": true,
+      "sha256": "2d428f15f7890bb9072cf5b8488a6227bb82cc83cfaaea4075276b10c74fcf86"
+    },
+    {
+      "path": "src/data/sources.ts",
+      "unchanged": true,
+      "sha256": "6a2451db4f5275c48adbed2d56d86659de43dce75b0a052f81d2d3fdfcfb7545"
+    },
+    {
+      "path": "tests/calculate.test.ts",
+      "unchanged": true,
+      "sha256": "5f465df3f564f6d7d675ca1a91efed8c3ce9639e6eef5e5ae691414484dd1af4"
+    },
+    {
+      "path": "tests/http.test.ts",
+      "unchanged": true,
+      "sha256": "bfcb30f355ec5a37e82f43eb86ecd1195c4fb3de5b249d133c2489d58e26cfad"
+    },
+    {
+      "path": "tests/message.test.ts",
+      "unchanged": true,
+      "sha256": "c88ba0ced05bd0698bc9c6fa8ad55b8d99e3fd8b9faf2ca57f03c06edb639487"
+    },
+    {
+      "path": "tests/provider.test.ts",
+      "unchanged": true,
+      "sha256": "f1cfc00573e95ceda007026e55302e258408f9943545d6095b1f4b8171f9845b"
+    }
+  ]
+}

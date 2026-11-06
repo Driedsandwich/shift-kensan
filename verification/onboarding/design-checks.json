@@ -1,0 +1,104 @@
+{
+  "total": 24,
+  "passed": 24,
+  "checks": [
+    {
+      "name": "390px / 最初の画面 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 明細をアプリ内で拡大・閉じる",
+      "passed": true
+    },
+    {
+      "name": "390px / 日別編集を開いた状態 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 読み取り確認 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 差額・見込みと閉じた根拠の名称・適用日・出典",
+      "passed": true
+    },
+    {
+      "name": "390px / 結果 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 根拠を開くと入力・式・丸め・条件が読める",
+      "passed": true
+    },
+    {
+      "name": "390px / 詳細な計算を展開 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 確認文をコピー",
+      "passed": true
+    },
+    {
+      "name": "390px / 既存のJSON保存",
+      "passed": true
+    },
+    {
+      "name": "390px / 6桁以上の大きな金額 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 支払額が未入力 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 最初の画面 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 明細をアプリ内で拡大・閉じる",
+      "passed": true
+    },
+    {
+      "name": "1280px / 日別編集を開いた状態 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 読み取り確認 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 差額・見込みと閉じた根拠の名称・適用日・出典",
+      "passed": true
+    },
+    {
+      "name": "1280px / 結果 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 根拠を開くと入力・式・丸め・条件が読める",
+      "passed": true
+    },
+    {
+      "name": "1280px / 詳細な計算を展開 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 確認文をコピー",
+      "passed": true
+    },
+    {
+      "name": "1280px / 既存のJSON保存",
+      "passed": true
+    },
+    {
+      "name": "1280px / 6桁以上の大きな金額 / 横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 支払額が未入力 / 横はみ出しなし",
+      "passed": true
+    }
+  ],
+  "browserErrors": [],
+  "externalRequests": []
+}

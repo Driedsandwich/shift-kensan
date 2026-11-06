@@ -1,0 +1,116 @@
+{
+  "total": 27,
+  "passed": 27,
+  "checks": [
+    {
+      "name": "390px / 段階1の現在地・3段の案内・横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 最初の表示内に主ボタン・料金・ログイン不要・押した後の説明、送信なし",
+      "passed": true
+    },
+    {
+      "name": "390px / 段階2の現在地・3段の案内・横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / 主ボタンから既存の見本が開く・AI呼出0回",
+      "passed": true
+    },
+    {
+      "name": "390px / 押せない理由がわかり、確認欄への案内から次へ進める",
+      "passed": true
+    },
+    {
+      "name": "390px / 段階3の現在地・3段の案内・横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "390px / AIを使わず最後まで到達・2,387円・次の2経路",
+      "passed": true
+    },
+    {
+      "name": "390px / 結果から根拠の条件と式までたどれる",
+      "passed": true
+    },
+    {
+      "name": "390px / 自分の入力へ移動・見本と結果を消去・入力見出しにフォーカス",
+      "passed": true
+    },
+    {
+      "name": "390px / 自分の文で最後まで到達・578円・最初に戻ると入力消去",
+      "passed": true
+    },
+    {
+      "name": "390px / 読み取りのそばにも料金説明・空入力時は進まない",
+      "passed": true
+    },
+    {
+      "name": "390px / AI接続表示時は動作と待ち時間を明記・料金説明が隣接（GET差替えのみ）",
+      "passed": true
+    },
+    {
+      "name": "390px / AI接続表示でも見本はforceMock・AI呼出0回",
+      "passed": true
+    },
+    {
+      "name": "1280px / 段階1の現在地・3段の案内・横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 最初の表示内に主ボタン・料金・ログイン不要・押した後の説明、送信なし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 段階2の現在地・3段の案内・横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / 主ボタンから既存の見本が開く・AI呼出0回",
+      "passed": true
+    },
+    {
+      "name": "1280px / 押せない理由がわかり、確認欄への案内から次へ進める",
+      "passed": true
+    },
+    {
+      "name": "1280px / 段階3の現在地・3段の案内・横はみ出しなし",
+      "passed": true
+    },
+    {
+      "name": "1280px / AIを使わず最後まで到達・2,387円・次の2経路",
+      "passed": true
+    },
+    {
+      "name": "1280px / 結果から根拠の条件と式までたどれる",
+      "passed": true
+    },
+    {
+      "name": "1280px / 自分の入力へ移動・見本と結果を消去・入力見出しにフォーカス",
+      "passed": true
+    },
+    {
+      "name": "1280px / 自分の文で最後まで到達・578円・最初に戻ると入力消去",
+      "passed": true
+    },
+    {
+      "name": "1280px / 読み取りのそばにも料金説明・空入力時は進まない",
+      "passed": true
+    },
+    {
+      "name": "1280px / AI接続表示時は動作と待ち時間を明記・料金説明が隣接（GET差替えのみ）",
+      "passed": true
+    },
+    {
+      "name": "1280px / AI接続表示でも見本はforceMock・AI呼出0回",
+      "passed": true
+    },
+    {
+      "name": "全画面でJavaScriptエラー0件・外部送信0件",
+      "passed": true
+    }
+  ],
+  "browserErrors": [],
+  "externalRequests": []
+}

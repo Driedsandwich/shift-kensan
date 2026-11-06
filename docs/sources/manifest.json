@@ -1,0 +1,90 @@
+[
+  {
+    "file": "minimum-2026.pdf",
+    "url": "https://www.mhlw.go.jp/content/11200000/001753406.pdf",
+    "checked": "2026-11-06",
+    "bytes": 41948,
+    "sha256": "625c6e1fa951f1e6d4291131bfef1a1b3f0b901af8d10c2316be1cc2e7664438",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "minimum-2025-reference.pdf",
+    "url": "https://www.mhlw.go.jp/content/10200000/001646434.pdf",
+    "checked": "2026-11-06",
+    "bytes": 8610534,
+    "sha256": "ea1977c25649bce474bda804aea19d71285751a1a9804da9a8392a849f0786fc",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "student-checklist.pdf",
+    "url": "https://www.check-roudou.mhlw.go.jp/pdf/jishutenken.pdf",
+    "checked": "2026-11-06",
+    "bytes": 608677,
+    "sha256": "5a0a2cdf7c8774a7842f40bfef4d1c9196e697ce88cfb3ccc699bb830944503c",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "overnight.pdf",
+    "url": "https://jsite.mhlw.go.jp/aichi-roudoukyoku/var/rev0/0116/9586/p1.pdf",
+    "checked": "2026-11-06",
+    "bytes": 366226,
+    "sha256": "8ec545e8cf2d83a730ef5e2e639b2e527ad9e09d5ac727b19a92ba9fe5fc6512",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "rounding.pdf",
+    "url": "https://jsite.mhlw.go.jp/aichi-roudoukyoku/var/rev0/0119/6636/hasuutoriatukai.pdf",
+    "checked": "2026-11-06",
+    "bytes": 75073,
+    "sha256": "7818910f55bc968c541ea6f797d2fe202430361885a54e74e3e49233726e8def",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "guideline.html",
+    "url": "https://jsite.mhlw.go.jp/osaka-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/hourei_seido/jikan2/kokuji/kokuji2.html",
+    "checked": "2026-11-06",
+    "bytes": 50597,
+    "sha256": "0c20c7b4f2ed20543ce524fa43f36e68b33fb0755a3301d268d36006f2ef0850",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "labor-law.html",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=73022000",
+    "checked": "2026-11-06",
+    "bytes": 322087,
+    "sha256": "367006448038eef80facb97a0e349b76d4f225520c76c6c9ad7d052be41518c2",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "premium-decree.html",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=73028600&dataType=0&pageNo=1",
+    "checked": "2026-11-06",
+    "bytes": 5355,
+    "sha256": "abdf913b4cef50ca8ccd01d095bba81c5d52c5f4b1945fd34ad029941da8f33b",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "overtime-60.pdf",
+    "url": "https://www.mhlw.go.jp/content/000930914.pdf",
+    "checked": "2026-11-06",
+    "bytes": 1290354,
+    "sha256": "b826aaa75aeba5e1e40f380d6bb30d8b5a1b267b5ed75bb681b56f53bcbd1d4d",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "consultation.html",
+    "url": "https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html",
+    "checked": "2026-11-06",
+    "bytes": 211963,
+    "sha256": "c5940f6d1cb1ace4b75fcaac5625c0e498a4b9a2248bd2e3163c1c767c5432d5",
+    "status": "取得・実物確認"
+  },
+  {
+    "file": "minimum-exclusions.html",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/chingin/newpage_43898.html",
+    "checked": "2026-11-06",
+    "bytes": 49868,
+    "sha256": "0e49acde9e995c7fc70dbba730528d2b1c0c8cc54b70f0f3c590826342904625",
+    "status": "取得・実物確認"
+  }
+]

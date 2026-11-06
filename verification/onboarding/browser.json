@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "name": "390px / 授業の前後が入っていない / 結果と文の照合",
+      "passed": true
+    },
+    {
+      "name": "390px / 22時を過ぎた分は？ / 結果と文の照合",
+      "passed": true
+    },
+    {
+      "name": "390px / 記録と支払いが合う / 結果と文の照合",
+      "passed": true
+    },
+    {
+      "name": "1440px / 授業の前後が入っていない / 結果と文の照合",
+      "passed": true
+    },
+    {
+      "name": "1440px / 22時を過ぎた分は？ / 結果と文の照合",
+      "passed": true
+    },
+    {
+      "name": "1440px / 記録と支払いが合う / 結果と文の照合",
+      "passed": true
+    },
+    {
+      "name": "新しい自由文で再計算（1733円・18:10〜23:20）",
+      "passed": true
+    },
+    {
+      "name": "本人の編集が結果と相談文の両方に反映",
+      "passed": true
+    },
+    {
+      "name": "空欄のまま誤ってゼロ円で結果を出さない",
+      "passed": true
+    },
+    {
+      "name": "鍵なし・AIなしの手入力から最後まで",
+      "passed": true
+    },
+    {
+      "name": "ブラウザ保存領域に明細・記録を残さない",
+      "passed": true
+    },
+    {
+      "name": "再読み込み後に個人の入力を復元しない",
+      "passed": true
+    },
+    {
+      "name": "写真を端末で縮小・data URL送信・mockの限界を表示・原本を表示",
+      "passed": true
+    },
+    {
+      "name": "API接続失敗時に日本語で案内し入力と手入力経路を保つ",
+      "passed": true
+    }
+  ],
+  "browserErrors": [],
+  "total": 14,
+  "passed": 14
+}
